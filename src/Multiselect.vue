@@ -308,7 +308,11 @@ export default {
     tabindex: {
       type: Number,
       default: 0
-    }
+    },
+    canDeselect: {
+      type: Boolean,
+      default: true
+    },
   },
   computed: {
     isSingleLabelVisible () {

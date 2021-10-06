@@ -513,7 +513,7 @@ export default {
         const isSelected = this.isSelected(option)
 
         if (isSelected) {
-          if (key !== 'Tab') this.removeElement(option)
+          if (key !== 'Tab') this.canDeselect && this.removeElement(option) || (this.closeOnSelect && this.deactivate())
           return
         }
 
